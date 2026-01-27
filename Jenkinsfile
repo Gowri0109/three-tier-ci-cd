@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                dir('three-tier') {
+                dir('terraform') {
                     git branch: 'main', url: 'https://github.com/Gowri0109/Multi-Tier-AWS-Infrastructure-using-Terraform.git'
                 }
             }
@@ -21,7 +21,7 @@ pipeline {
 
         stage('Terraform Init & Plan') {
             steps {
-                dir('terraform/project-1') {
+                dir('terraform') {
                     sh '''
                         echo "Initializing Terraform..."
                         terraform init
@@ -57,7 +57,7 @@ pipeline {
                 }
             }
             steps {
-                dir('terraform/project-1') {
+                dir('terraform') {
                     script {
                         if (params.terraformAction == 'apply') {
                             echo "Applying Terraform changes..."
