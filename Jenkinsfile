@@ -39,7 +39,7 @@ pipeline {
         stage('Manual Approval') {
             steps {
                 script {
-                    def planOutput = readFile('terraform/project-1/tfplan.txt')
+                    def planOutput = readFile('terraform/tfplan.txt')
                     input(
                         message: "Do you want to proceed with the Terraform action?",
                         parameters: [
