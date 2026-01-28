@@ -1,4 +1,4 @@
-# 🚀 Three-Tier CI/CD Pipeline with Jenkins & Terraform (AWS)
+#  Three-Tier CI/CD Pipeline with Jenkins & Terraform (AWS)
 
 This project demonstrates a production-style CI/CD pipeline using Jenkins and Terraform to provision a 3-tier AWS infrastructure with a manual approval gate before deployment.
 
@@ -6,7 +6,7 @@ The pipeline automates infrastructure provisioning while still keeping human con
 
 -----
 
-## 🧱 Architecture Overview
+##  Architecture Overview
 
 The Terraform code provisions the following AWS resources:
 
@@ -57,7 +57,7 @@ three-tier-ci-cd/
 
 ---
 
-## ⚙️ Jenkins Pipeline Flow
+##  Jenkins Pipeline Flow
 
 - Checkout CI/CD Repository
 
@@ -78,7 +78,7 @@ three-tier-ci-cd/
 -----
 
 
-## 🧪 Manual Approval Stage (Key Feature)
+##  Manual Approval Stage (Key Feature)
 
 Before applying any infrastructure changes, Jenkins pauses and displays:
 
@@ -96,7 +96,7 @@ This ensures:
 
 ----
 
-## ▶️ How to Run This Project
+##  How to Run This Project
 Prerequisites
 
 - Jenkins installed on EC2 or local server
@@ -128,7 +128,7 @@ Prerequisites
 -----------
 
 
-## 🔐 Security Notes
+##  Security Notes
 
 - AWS credentials are securely stored in Jenkins Credentials Manager
 
@@ -152,7 +152,7 @@ Prerequisites
 -------
 
 
-## 📌 Future Enhancements
+## Future Enhancements
 
 - Remote Terraform backend (S3 + DynamoDB)
 
